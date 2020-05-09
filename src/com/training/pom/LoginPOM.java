@@ -4,35 +4,52 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class LoginPOM {
-	private WebDriver driver; 
-	
 	public LoginPOM(WebDriver driver) {
-		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
+	//######################################################################################
+//  Applicaiton Login with Valid UserID and Password
+//######################################################################################
 	
-	@FindBy(id="login")
-	private WebElement userName; 
+	@FindBy(xpath ="//*[@id=\"Menu_Wmt3OMY3\"]/nav/ul/li[2]/a")
+	private WebElement clickLoginPage; 
 	
-	@FindBy(id="password")
-	private WebElement password;
+	@FindBy(id ="input-email")
+	private WebElement enterUserId; 
 	
-	@FindBy(id="formLogin_submitAuth")
-	private WebElement loginBtn; 
+	@FindBy(id ="input-password")
+	private WebElement enterPassword;
 	
-	public void sendUserName(String userName) {
-		this.userName.clear();
-		this.userName.sendKeys(userName);
+	@FindBy(xpath ="//input[@type = 'submit']")
+	private WebElement clickLogin;
+
+	
+
+//######################################################################################
+//  Applicaiton Login with Valid UserID and Password
+//######################################################################################
+	public void clickOnLoginPage() {
+		this.clickLoginPage.click();		
 	}
 	
-	public void sendPassword(String password) {
-		this.password.clear(); 
-		this.password.sendKeys(password); 
+	public void enterUserName(String enterUserId) {
+		this.enterUserId.sendKeys(enterUserId);		
 	}
 	
-	public void clickLoginBtn() {
-		this.loginBtn.click(); 
+	
+	public void enterUserPassword(String enterPassword) {
+		this.enterPassword.sendKeys(enterPassword);		
 	}
+	
+	public void clickOnLogin() {
+		this.clickLogin.click();		
+	}
+	
+	
+		
+	
 }

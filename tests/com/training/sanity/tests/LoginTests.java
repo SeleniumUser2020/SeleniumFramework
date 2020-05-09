@@ -17,48 +17,56 @@ import com.training.utility.DriverNames;
 
 public class LoginTests {
 
-	private static WebDriver driver;
-	private static String baseUrl;
-	private static LoginPOM loginPOM;
+	private WebDriver driver;
+	private String baseUrl;
+	private LoginPOM loginPOM;
 	private static Properties properties;
-	private static ScreenShot screenShot;
+	private ScreenShot screenShot;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
-		Object driverName;
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
-		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
-		String baseURL;
-		//open the browser
-		driver.get(baseURL);
 	}
 
-	/*@BeforeMethod
+	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
-		driver.get(baseUrl);*/
-	
-	//dummy value//
+		driver.get(baseUrl);
+	}
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-	@Test
-	public void validLoginTest() {
-		loginPOM.sendUserName("admin");
-		loginPOM.sendPassword("admin@123");
-		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+	
+	@Test (priority =1)
+	public void validLoginTest() throws InterruptedException {
+		
+		
+		loginPOM.clickOnLoginPage();
+		loginPOM.enterUserName("pamiljain@gmail.com");
+		loginPOM.enterUserPassword("gurgaon123");
+		loginPOM.clickOnLogin();	
+		
+			
+		Thread.sleep(6000);
+	
 	}
+	/*
+	
+	
+	@Test (priority =2)// Secound Test cases
+	public void NextTtestCAseNAme() throws InterruptedException {
+		
+	
+		
+	}*/
+
 }
