@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33879" started-at="2020-05-09T23:20:11Z" finished-at="2020-05-09T23:20:45Z">
+  <suite name="Default suite" duration-ms="33806" started-at="2020-05-11T03:16:53Z" finished-at="2020-05-11T03:17:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33879" started-at="2020-05-09T23:20:11Z" finished-at="2020-05-09T23:20:45Z">
+    <test name="Default test" duration-ms="33806" started-at="2020-05-11T03:16:53Z" finished-at="2020-05-11T03:17:27Z">
       <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2020-05-09T19:20:11Z" finished-at="2020-05-09T19:20:11Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2020-05-10T23:16:53Z" finished-at="2020-05-10T23:16:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="setUp" is-config="true" duration-ms="19990" started-at="2020-05-09T19:20:11Z" finished-at="2020-05-09T19:20:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="setUp" is-config="true" duration-ms="15313" started-at="2020-05-10T23:16:53Z" finished-at="2020-05-10T23:17:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="validLoginTest" duration-ms="11633" started-at="2020-05-09T19:20:31Z" finished-at="2020-05-09T19:20:42Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="validLoginTest" duration-ms="16484" started-at="2020-05-10T23:17:08Z" finished-at="2020-05-10T23:17:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="tearDown" is-config="true" duration-ms="2198" started-at="2020-05-09T19:20:42Z" finished-at="2020-05-09T19:20:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@482f8f11]" name="tearDown" is-config="true" duration-ms="1955" started-at="2020-05-10T23:17:25Z" finished-at="2020-05-10T23:17:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

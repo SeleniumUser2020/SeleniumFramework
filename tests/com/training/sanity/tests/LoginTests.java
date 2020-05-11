@@ -54,8 +54,12 @@ public class LoginTests {
 		loginPOM.enterUserName("pamiljain@gmail.com");
 		loginPOM.enterUserPassword("gurgaon123");
 		loginPOM.clickOnLogin();	
+		loginPOM.clickChangePassword();
+	
+		loginPOM.EnterEmail("gurgaon124");
+		loginPOM.ReEnterEmail("gurgaon124");
+		loginPOM.ClickContinueButton();
 		
-			
 		Thread.sleep(6000);
 	
 	}
