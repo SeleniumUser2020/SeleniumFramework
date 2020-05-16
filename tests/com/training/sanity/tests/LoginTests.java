@@ -61,6 +61,9 @@ public class LoginTests {
 		loginPOM.ClickContinueButton();
 		
 		Thread.sleep(6000);
+		
+		
+		
 	
 	}
 	/*

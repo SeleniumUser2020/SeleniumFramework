@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -63,6 +64,10 @@ public class AssignmentTest {
 	@Test
 	public void Scenario1() throws InterruptedException {
 		System.out.println("Test Scenario1 starts");
+		
+		driver.findElement(By.id("  "));
+		driver.findElement(By.xpath("");
+		
 	
 		// Clicking on "Blog" link
 		homePage.ClickLoginLink();
